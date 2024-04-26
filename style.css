@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    background-color: hsl(212, 45%, 89%);
+    display: block;
+    text-align: center;
+    font-family: 'Specimen Outfit', sans-serif;
+}
+/*MAIN CONTAINER*/
+.container{
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+    border-radius: 1.5em;
+    margin: 5% auto;
+    max-width: 330px;
+    height: 500px;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
+}
+/*IMAGE DIV*/
+.image{
+    position: absolute;
+    top: 15px;
+}
+.image img{
+    max-width: 300px;
+    height: auto;
+    border-radius: 0.9em;
+    -webkit-border-radius: 0.9em;
+    -moz-border-radius: 0.9em;
+    -ms-border-radius: 0.9em;
+    -o-border-radius: 0.9em;
+}
+/*TEXT DIV*/
+.text{
+    position: absolute;
+    top: 330px;
+    width: 310px;
+    padding: 15px;
+    font-weight: 600;
+}
+.text p{
+    font-size: 1.3em;
+}
+.text span{
+    color: rgb(113, 113, 113);
+    display: block;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+/*RESPONSIVE DESIGN CODE*/
+@media screen and (max-width: 500px) {
+    body{
+        max-width:500px;
+    }
+    .container{
+        margin:30% auto;
+    }
+}
